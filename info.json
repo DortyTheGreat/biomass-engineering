@@ -4,7 +4,7 @@
   "title": "Biomass Engineering",
   "author": "DortyTheFabric",
   "factorio_version": "2.0",
-  "description": "Biters and Spitters drop biomass, that coud be processed later on",
+  "description": "Biters and Spitters drop biomass, that coud be processed into different items",
   "dependencies": ["base >= 2.0.0"],
   "data": ["data.lua", "data-updates.lua", "data-final-fixes.lua"]
 }

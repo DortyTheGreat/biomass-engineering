@@ -79,6 +79,32 @@ data:extend({
     fuel_emissions_multiplier = 0.2,
     weight = 1*kg,
   },
+  
+  {
+    type = "item",
+    name = "biomass-235",
+    icon = "__biomass-engineering__/graphics/icons/biomass-235.png", 
+    icon_size = 64,
+    stack_size = 100,
+
+    fuel_category = "nuclear",     
+    fuel_value = "40GJ",            
+    fuel_emissions_multiplier = 0.2,
+    weight = 1*kg,
+  },
+  
+  {
+    type = "item",
+    name = "biomass-238",
+    icon = "__biomass-engineering__/graphics/icons/biomass-238.png", 
+    icon_size = 64,
+    stack_size = 100,
+
+    fuel_category = "nuclear",     
+    fuel_value = "500MJ",            
+    fuel_emissions_multiplier = 0.2,
+    weight = 1*kg,
+  },
 
   {
     type = "item",

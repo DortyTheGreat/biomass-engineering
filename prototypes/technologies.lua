@@ -71,6 +71,31 @@ data:extend({
 })
 
 
+
+
+data:extend({
+  {
+    type = "technology",
+    name = "debris-excavation-tech",
+    icon = "__biomass-engineering__/graphics/icons/compressed-biomass.png",
+    icon_size = 64,
+    prerequisites = { "biomass-tech", "oil-processing" },
+    unit = {
+      count = 100,
+      ingredients = { { "automation-science-pack", 1 } },
+      time = 1
+    },
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "debris-excavation"
+      },
+
+    },
+    order = "a-b-a"
+  }
+})
+
 data:extend({
   {
     type = "technology",
@@ -93,7 +118,68 @@ data:extend({
         type = "unlock-recipe",
         recipe = "biomass-uncompression"
       },
+	  
+	  {
+        type = "unlock-recipe",
+        recipe = "water-deletion"
+      },
 
+    },
+    order = "a-b-a"
+  }
+})
+
+data:extend({
+  {
+    type = "technology",
+    name = "biomass-cultivation-tech",
+    icon = "__biomass-engineering__/graphics/icons/compressed-biomass.png",
+    icon_size = 64,
+    prerequisites = { "compressed-biomass-tech", "advanced-oil-processing" },
+    unit = {
+      count = 100,
+      ingredients = { { "automation-science-pack", 1 }, { "logistic-science-pack", 1 }, { "chemical-science-pack", 1 } },
+      time = 40
+    },
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "biomass-cultivation"
+      },
+    },
+    order = "a-b-a"
+  }
+})
+
+
+data:extend({
+  {
+    type = "technology",
+    name = "biomass-irradiation-tech",
+    icon = "__base__/graphics/icons/uranium-238.png",
+    icon_size = 64,
+    prerequisites = { "debris-excavation-tech", "nuclear-power" },
+    unit = {
+      count = 77,
+      ingredients = { { "automation-science-pack", 1 }, { "logistic-science-pack", 1 }, { "chemical-science-pack", 1 } },
+      time = 100
+    },
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "biomass-irradiation"
+      },
+	  
+	  {
+        type = "unlock-recipe",
+        recipe = "biomass-235-processing"
+      },
+	  
+	  {
+        type = "unlock-recipe",
+        recipe = "biomass-238-processing"
+      },
+	  
     },
     order = "a-b-a"
   }
