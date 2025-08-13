@@ -2,6 +2,7 @@ radius_drop = 1.5
 
 local drop_table = require("prototypes.drop_config")
 local stuff_table = require("prototypes.stuff_config")
+local drop_mult = settings.startup["biomass-engineering-scaling"].value
 
 local function drop_item(surface, dposition, item_name, item_count, chance_to_drop, range_r)
   for i = 1, item_count do
@@ -37,7 +38,7 @@ script.on_event(defines.events.on_entity_died, function(event)
 
   local drop = drop_table[entity.name]
   if drop then
-    local min, max = drop[1], drop[2]
+    local min, max = drop[1] * drop_mult, drop[2] * drop_mult
     amount = math.random(min, max)
   end
 

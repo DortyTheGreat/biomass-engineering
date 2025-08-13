@@ -4,7 +4,7 @@ data:extend({
     name = "military-science-pack-with-biomass",
     icons = {
       {
-        icon = "__enemies-drops-items__/graphics/icons/biomass.png",
+        icon = "__biomass-engineering__/graphics/icons/biomass.png",
         icon_size = 64
       },
       {

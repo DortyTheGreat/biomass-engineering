@@ -1,45 +1,46 @@
 require("prototypes/bio-assembler")
 require("prototypes/bio-farm")
+require("recipes")
 data:extend({
   {
     type = "item",
     name = "biomass",
-    icon = "__enemies-drops-items__/graphics/icons/biomass.png", 
+    icon = "__biomass-engineering__/graphics/icons/biomass.png", 
 
     pictures = {
           {
             size = 64,
-            filename = "__enemies-drops-items__/graphics/icons/biomass.png",
+            filename = "__biomass-engineering__/graphics/icons/biomass.png",
             scale = 0.5,
           },
 
           {
             size = 64,
-            filename = "__enemies-drops-items__/graphics/icons/biomass2.png",
+            filename = "__biomass-engineering__/graphics/icons/biomass2.png",
             scale = 0.5,
           },
 
           {
             size = 64,
-            filename = "__enemies-drops-items__/graphics/icons/biomass3.png",
+            filename = "__biomass-engineering__/graphics/icons/biomass3.png",
             scale = 0.5,
           },
 
           {
             size = 64,
-            filename = "__enemies-drops-items__/graphics/icons/biomass4.png",
+            filename = "__biomass-engineering__/graphics/icons/biomass4.png",
             scale = 0.5,
           },
 
           {
             size = 64,
-            filename = "__enemies-drops-items__/graphics/icons/biomass5.png",
+            filename = "__biomass-engineering__/graphics/icons/biomass5.png",
             scale = 0.5,
           },
 
           {
             size = 64,
-            filename = "__enemies-drops-items__/graphics/icons/biomass6.png",
+            filename = "__biomass-engineering__/graphics/icons/biomass6.png",
             scale = 0.5,
           },
         },
@@ -56,7 +57,7 @@ data:extend({
   {
     type = "item",
     name = "dried-biomass",
-    icon = "__enemies-drops-items__/graphics/icons/dried-biomass.png", 
+    icon = "__biomass-engineering__/graphics/icons/dried-biomass.png", 
     icon_size = 64,
     stack_size = 100,
 
@@ -65,11 +66,24 @@ data:extend({
     fuel_emissions_multiplier = 0.2,
     weight = 1*kg,
   },
+  
+  {
+    type = "item",
+    name = "compressed-biomass",
+    icon = "__biomass-engineering__/graphics/icons/compressed-biomass.png", 
+    icon_size = 64,
+    stack_size = 100,
+
+    fuel_category = "chemical",     -- обычное топливо (как уголь)
+    fuel_value = "5MJ",             -- сколько энергии (уголь = 4MJ)
+    fuel_emissions_multiplier = 0.2,
+    weight = 1*kg,
+  },
 
   {
     type = "item",
     name = "empty-biomass-fuel-cell",
-    icon = "__enemies-drops-items__/graphics/icons/empty-biomass-fuel-cell.png", 
+    icon = "__biomass-engineering__/graphics/icons/empty-biomass-fuel-cell.png", 
     icon_size = 64,
     stack_size = 100,
 
@@ -87,7 +101,7 @@ data:extend({
   {
     type = "item",
     name = "charged-biomass-fuel-cell",
-    icon = "__enemies-drops-items__/graphics/icons/charged-biomass-fuel-cell.png", 
+    icon = "__biomass-engineering__/graphics/icons/charged-biomass-fuel-cell.png", 
     icon_size = 64,
     stack_size = 100,
 
@@ -114,7 +128,7 @@ data:extend({
     name = "biomass-craft",
     order = "z",
     inventory_order = "z",
-    icon = "__enemies-drops-items__/graphics/icons/biomass.png",
+    icon = "__biomass-engineering__/graphics/icons/biomass.png",
     icon_size = 64,
   },
 
@@ -139,11 +153,11 @@ data:extend({
     name = "fill-biomass-fuel-cell-biomass",
     icons = {
       {
-        icon = "__enemies-drops-items__/graphics/icons/charged-biomass-fuel-cell.png",
+        icon = "__biomass-engineering__/graphics/icons/charged-biomass-fuel-cell.png",
         icon_size = 64
       },
       {
-        icon = "__enemies-drops-items__/graphics/icons/biomass.png",
+        icon = "__biomass-engineering__/graphics/icons/biomass.png",
         icon_size = 64,
         scale = 0.25,
         shift = { -8, -8 }  -- позиция второй иконки в правом нижнем углу
@@ -170,11 +184,11 @@ data:extend({
     name = "fill-biomass-fuel-cell-upbiomass",
     icons = {
       {
-        icon = "__enemies-drops-items__/graphics/icons/charged-biomass-fuel-cell.png",
+        icon = "__biomass-engineering__/graphics/icons/charged-biomass-fuel-cell.png",
         icon_size = 64
       },
       {
-        icon = "__enemies-drops-items__/graphics/icons/upgraded_biomass.png",
+        icon = "__biomass-engineering__/graphics/icons/upgraded_biomass.png",
         icon_size = 64,
         scale = 0.25,
         shift = { -8, -8 }  -- позиция второй иконки в правом нижнем углу
@@ -201,11 +215,11 @@ data:extend({
     name = "fill-biomass-fuel-cell-mega-biomass",
     icons = {
       {
-        icon = "__enemies-drops-items__/graphics/icons/charged-biomass-fuel-cell.png",
+        icon = "__biomass-engineering__/graphics/icons/charged-biomass-fuel-cell.png",
         icon_size = 64
       },
       {
-        icon = "__enemies-drops-items__/graphics/icons/biomass-filter.png",
+        icon = "__biomass-engineering__/graphics/icons/biomass-filter.png",
         icon_size = 64,
         scale = 0.25,
         shift = { -8, -8 }  -- позиция второй иконки в правом нижнем углу
@@ -233,7 +247,7 @@ data:extend({
   {
     type = "item",
     name = "upgraded-biomass",
-    icon = "__enemies-drops-items__/graphics/icons/upgraded_biomass.png", 
+    icon = "__biomass-engineering__/graphics/icons/upgraded_biomass.png", 
     icon_size = 64,
     stack_size = 50,
 
@@ -249,7 +263,7 @@ data:extend({
   {
     type = "item",
     name = "mega-biomass",
-    icon = "__enemies-drops-items__/graphics/icons/biomass-filter.png",  -- замени на свою иконку  
+    icon = "__biomass-engineering__/graphics/icons/biomass-filter.png",  -- замени на свою иконку  
     icon_size = 64,
     order = "z[biomass-filter]",
     stack_size = 50,
@@ -269,7 +283,7 @@ data:extend({
     name = "iron-base-recycling-biomass",
     icons = {
       {
-        icon = "__enemies-drops-items__/graphics/icons/biomass.png",
+        icon = "__biomass-engineering__/graphics/icons/biomass.png",
         icon_size = 64
       },
       {
@@ -307,7 +321,7 @@ data:extend({
     name = "copper-base-recycling-biomass",
     icons = {
       {
-        icon = "__enemies-drops-items__/graphics/icons/biomass.png",
+        icon = "__biomass-engineering__/graphics/icons/biomass.png",
         icon_size = 64
       },
       {
@@ -346,11 +360,11 @@ data:extend({
     name = "biomass-recovery",
     icons = {
       {
-        icon = "__enemies-drops-items__/graphics/icons/dried-biomass.png",
+        icon = "__biomass-engineering__/graphics/icons/dried-biomass.png",
         icon_size = 64
       },
       {
-        icon = "__enemies-drops-items__/graphics/icons/biomass.png",
+        icon = "__biomass-engineering__/graphics/icons/biomass.png",
         icon_size = 64,
         scale = 0.25,
         shift = { -8, -8 }  -- позиция второй иконки в правом нижнем углу
@@ -377,11 +391,11 @@ data:extend({
     name = "biomass-recovery-with-water",
     icons = {
       {
-        icon = "__enemies-drops-items__/graphics/icons/dried-biomass.png",
+        icon = "__biomass-engineering__/graphics/icons/dried-biomass.png",
         icon_size = 64
       },
       {
-        icon = "__enemies-drops-items__/graphics/icons/biomass.png",
+        icon = "__biomass-engineering__/graphics/icons/biomass.png",
         icon_size = 64,
         scale = 0.25,
         shift = { -8, -8 }  -- позиция второй иконки в правом нижнем углу
@@ -416,7 +430,7 @@ data:extend({
     name = "advanced-recycling-biomass",
     subgroup = "biomass-crafting", 
     category = "bio-crafting", 
-    icon = "__enemies-drops-items__/graphics/icons/upgraded_biomass.png",  -- замени на свою иконку  
+    icon = "__biomass-engineering__/graphics/icons/upgraded_biomass.png",  -- замени на свою иконку  
     icon_size = 64,
     enabled = false,
     allow_decomposition = true,  
@@ -450,7 +464,7 @@ data:extend({
     name = "mega-recycling-biomass",
     subgroup = "biomass-crafting", 
     category = "bio-crafting", 
-    icon = "__enemies-drops-items__/graphics/icons/biomass-filter.png",  -- замени на свою иконку  
+    icon = "__biomass-engineering__/graphics/icons/biomass-filter.png",  -- замени на свою иконку  
     icon_size = 64,
     enabled = false,
     allow_decomposition = true,  
@@ -488,7 +502,7 @@ data:extend({
     name = "base-biomass-bettering",
     subgroup = "biomass-crafting", 
     category = "bio-crafting", 
-    icon = "__enemies-drops-items__/graphics/icons/biomass.png",  -- замени на свою иконку  
+    icon = "__biomass-engineering__/graphics/icons/biomass.png",  -- замени на свою иконку  
     icon_size = 50,
     enabled = false,
     allow_decomposition = true,  
@@ -509,7 +523,7 @@ data:extend({
     name = "to-base-biomass",
     subgroup = "biomass-crafting", 
     category = "bio-crafting", 
-    icon = "__enemies-drops-items__/graphics/icons/biomass.png",  -- замени на свою иконку  
+    icon = "__biomass-engineering__/graphics/icons/biomass.png",  -- замени на свою иконку  
     icon_size = 32,
     enabled = false,
     allow_decomposition = true,  
@@ -530,7 +544,7 @@ data:extend({
     name = "upgraded-biomass-bettering",
     subgroup = "biomass-crafting", 
     category = "bio-crafting", 
-    icon = "__enemies-drops-items__/graphics/icons/upgraded_biomass.png",  -- замени на свою иконку  
+    icon = "__biomass-engineering__/graphics/icons/upgraded_biomass.png",  -- замени на свою иконку  
     icon_size = 50,
     enabled = false,
     allow_decomposition = true,  
@@ -562,7 +576,7 @@ data:extend({
     },
     icons = {
       {
-        icon = "__enemies-drops-items__/graphics/icons/biomass.png",
+        icon = "__biomass-engineering__/graphics/icons/biomass.png",
         icon_size = 64
       },
       {
@@ -592,7 +606,7 @@ data:extend({
     },
     icons = {
       {
-        icon = "__enemies-drops-items__/graphics/icons/biomass.png",
+        icon = "__biomass-engineering__/graphics/icons/biomass.png",
         icon_size = 64
       },
       {
@@ -625,7 +639,7 @@ data:extend({
 --     },
 --     icons = {
 --       {
---         icon = "__enemies-drops-items__/graphics/icons/biomass.png",
+--         icon = "__biomass-engineering__/graphics/icons/biomass.png",
 --         icon_size = 64
 --       },
 --       {
@@ -659,7 +673,7 @@ data:extend({
 --     },
 --     icons = {
 --       {
---         icon = "__enemies-drops-items__/graphics/icons/biomass.png",
+--         icon = "__biomass-engineering__/graphics/icons/biomass.png",
 --         icon_size = 64
 --       },
 --       {
@@ -692,7 +706,7 @@ data:extend({
 --     },
 --     icons = {
 --       {
---         icon = "__enemies-drops-items__/graphics/icons/biomass.png",
+--         icon = "__biomass-engineering__/graphics/icons/biomass.png",
 --         icon_size = 64
 --       },
 --       {
@@ -725,7 +739,7 @@ data:extend({
 --     },
 --     icons = {
 --       {
---         icon = "__enemies-drops-items__/graphics/icons/biomass.png",
+--         icon = "__biomass-engineering__/graphics/icons/biomass.png",
 --         icon_size = 64
 --       },
 --       {

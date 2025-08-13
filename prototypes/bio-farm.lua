@@ -4,7 +4,7 @@ base.icon = nil
 
 base.icons = {
       {
-        icon = "__enemies-drops-items__/graphics/icons/biofarm.png",
+        icon = "__biomass-engineering__/graphics/icons/biofarm.png",
         icon_size = 64,
         tint = {r=1, g=0.3, b=1, a=1}
       }
@@ -17,7 +17,7 @@ base.graphics_set.animation = {
   layers = {
     {
       -- Статичная часть (корпус)
-      filename = "__enemies-drops-items__/graphics/entity/bio-farm.png",
+      filename = "__biomass-engineering__/graphics/entity/bio-farm.png",
       width = 238,
       height = 268,
       line_length = 1,
@@ -33,7 +33,7 @@ base.graphics_set.working_visualisations = {{
     layers = {
       {
         -- Анимируемая часть (например, пузырение, движения)
-        filename = "__enemies-drops-items__/graphics/entity/bio-farm-animation.png",
+        filename = "__biomass-engineering__/graphics/entity/bio-farm-animation.png",
         width = 92,
         height = 144,
         line_length = 8,

@@ -3,7 +3,10 @@
 --name, chance_todrop
 
 local stuff_table = {
-
+  --[[ 
+  
+  Feels kinda sad to remove all of the original code, so I guess I am just commenting it for whatever the reason...
+  Not changing the mechanic, since there is a plan on adding different biomasses depending on some researches
   --Vanilla
   {"firearm-magazine", 5},
   {"coal", 20},
@@ -31,10 +34,10 @@ local stuff_table = {
   {"nutrients", 4},
   {"carbon", 3},
   {"jellynut", 3},
-
-  --Enemies Drops Items
-  {"biomass", 90},
-
+	--]]
+  --
+  {"biomass", 100},
+	--[[
   --Krastorio2
   {"kr-quartz", 10},
   {"kr-automation-core", 2.5},
@@ -51,7 +54,7 @@ local stuff_table = {
   {"kr-enriched-iron", 15},
   {"kr-enriched-copper", 15},
   {"kr-lithium", 10},
-
+	--]]
 }
 
 return stuff_table

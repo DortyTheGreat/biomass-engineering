@@ -1,4 +1,6 @@
 -- drop_config.lua
+-- Drop config tells the {min, max} base amount of "value" that an entity drops
+
 local drop_table = {
   -- Vanilla biters
   ["small-biter"] = {0, 2},
