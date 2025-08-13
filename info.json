@@ -1,0 +1,10 @@
+{
+  "name": "enemies-drops-items",
+  "version": "2.2.0",
+  "title": "Enemies Drops Items",
+  "author": "Dimasrc",
+  "factorio_version": "2.0",
+  "description": "Biters and Spitters drops items when died",
+  "dependencies": ["base >= 2.0.0", "?air-filtering > 0.1.0"],
+  "data": ["data.lua", "data-updates.lua", "data-final-fixes.lua"]
+}

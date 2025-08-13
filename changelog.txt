@@ -1,0 +1,29 @@
+---------------------------------------------------------------------------------------------------
+Version: 2.2.0
+Date: 17.06.2025
+  Features:
+    - Bugfixes
+    - Now Enemies again drops not only biomass(also stuff from Krastorio2 and Space Age)
+    - Added Biofarm
+---------------------------------------------------------------------------------------------------
+Version: 2.1.2
+Date: 26.15.2025
+  Features:
+    - Bugfixes
+---------------------------------------------------------------------------------------------------
+Version: 2.1.1
+Date: 26.15.2025
+  Features:
+    - Fixed Changelog Date
+    - Bugfixes
+    - Now mod "Air Filtering" recipes also changes with biomass
+---------------------------------------------------------------------------------------------------
+Version: 2.1.0
+Date: 07.05.2025
+  Features:
+    - Added changelog
+    - Added drain biomass
+    - Biomass now can be used for condensation water and steam
+    - Better locale
+    - Now enemies from rampant also drops items(thanks OC1024 for idea)
+---------------------------------------------------------------------------------------------------

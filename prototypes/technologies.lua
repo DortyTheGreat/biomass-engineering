@@ -1,0 +1,127 @@
+data:extend({
+  {
+    type = "technology",
+    name = "biomass-tech",
+    icon = "__enemies-drops-items__/graphics/icons/biomass.png", -- замени на путь к своей иконке
+    icon_size = 64,
+    unit = {
+      count = 10,
+      ingredients = { { "automation-science-pack", 1 } },
+      time = 10
+    },
+
+
+
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "iron-base-recycling-biomass"
+      },
+
+      {
+        type = "unlock-recipe",
+        recipe = "copper-base-recycling-biomass"
+      },
+
+      {
+        type = "unlock-recipe",
+        recipe = "advanced-recycling-biomass"
+      },
+
+      {
+        type = "unlock-recipe",
+        recipe = "base-biomass-bettering"
+      },
+
+      {
+        type = "unlock-recipe",
+        recipe = "upgraded-biomass-bettering"
+      },
+
+      {
+        type = "unlock-recipe",
+        recipe = "to-base-biomass"
+      },
+
+      {
+        type = "unlock-recipe",
+        recipe = "bio-assembler"
+      },
+
+      {
+        type = "unlock-recipe",
+        recipe = "bio-farm"
+      },
+
+
+    },
+    order = "a-b-a"
+  }
+})
+
+data:extend({
+  {
+    type = "technology",
+    name = "dried-biomass-tech",
+    icon = "__enemies-drops-items__/graphics/icons/dried-biomass.png", -- замени на путь к своей иконке
+    icon_size = 64,
+    prerequisites = { "biomass-tech" },
+    unit = {
+      count = 100,
+      ingredients = { { "automation-science-pack", 1 }, { "logistic-science-pack", 1 } },
+      time = 20
+    },
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "biomass-recovery"
+      },
+
+      {
+        type = "unlock-recipe",
+        recipe = "biomass-recovery-with-water"
+      },
+
+
+      
+      {
+        type = "unlock-recipe",
+        recipe = "water-condensation-with-biomass"
+      },
+
+      {
+        type = "unlock-recipe",
+        recipe = "steam-condensation-with-biomass"
+      },
+
+
+    },
+    order = "a-b-a"
+  }
+})
+
+data:extend({
+  {
+    type = "technology",
+    name = "mega-biomass-tech",
+    icon = "__enemies-drops-items__/graphics/icons/biomass-filter.png", -- замени на путь к своей иконке
+    icon_size = 64,
+    prerequisites = { "dried-biomass-tech" },
+    unit = {
+      count = 500,
+      ingredients = { 
+        { "automation-science-pack", 1 },
+        { "logistic-science-pack", 1 },
+        { "chemical-science-pack", 1 },
+      },
+      time = 30
+    },
+    effects = {
+      {
+      type = "unlock-recipe",
+      recipe = "mega-recycling-biomass"
+      },
+    },
+    order = "a-b-b"
+  }
+})
