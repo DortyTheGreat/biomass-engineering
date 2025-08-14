@@ -189,6 +189,86 @@ data:extend({
 data:extend({
   {
     type = "technology",
+    name = "filtration-tech",
+    icon = "__biomass-engineering__/graphics/icons/distilled-water.png",
+    icon_size = 64,
+    prerequisites = { "debris-excavation-tech", "utility-science-pack" },
+    unit = {
+      count = 250,
+      ingredients = { { "utility-science-pack", 1 }, { "logistic-science-pack", 1 }, { "chemical-science-pack", 1 } },
+      time = 30
+    },
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "water-filtration"
+      },
+	  
+	  {
+        type = "unlock-recipe",
+        recipe = "germ-cultivation"
+      },
+	  
+	  {
+        type = "unlock-recipe",
+        recipe = "germ-extraction"
+      },
+	  
+    },
+    order = "a-b-a"
+  }
+})
+
+
+data:extend({
+  {
+    type = "technology",
+    name = "polymorphic-synthesis-tech",
+    icon = "__biomass-engineering__/graphics/icons/purple-orb.png",
+    icon_size = 64,
+    prerequisites = { "production-science-pack", "uranium-processing", "compressed-biomass-tech" },
+    unit = {
+      count = 1000,
+      ingredients = { { "production-science-pack", 1 }, { "chemical-science-pack", 1 } },
+      time = 30
+    },
+    effects = {
+      {
+        type = "unlock-recipe",
+        recipe = "polymorphic-synthesis-steel"
+      },
+	  
+	  {
+        type = "unlock-recipe",
+        recipe = "polymorphic-synthesis-advanced-circuit"
+      },
+	  
+	  {
+        type = "unlock-recipe",
+        recipe = "polymorphic-synthesis-purple-orb"
+      },
+	  
+	  {
+        type = "unlock-recipe",
+        recipe = "polymorphic-synthesis-plastic-bar"
+      },
+	  
+	  
+	  {
+        type = "unlock-recipe",
+        recipe = "purple-orb-hatching"
+      },
+	  
+    },
+    order = "a-b-a"
+  }
+})
+
+
+
+data:extend({
+  {
+    type = "technology",
     name = "dried-biomass-tech",
     icon = "__biomass-engineering__/graphics/icons/dried-biomass.png", -- замени на путь к своей иконке
     icon_size = 64,

@@ -382,3 +382,266 @@ data:extend({
     energy_required = 2
   }
 })
+
+
+data:extend({
+  {
+    type = "recipe",
+    name = "water-filtration",
+    icons = {
+      {
+        icon = "__biomass-engineering__/graphics/icons/biomass.png",
+        icon_size = 64
+      },
+      {
+        icon = "__biomass-engineering__/graphics/icons/polluted-water.png",
+        icon_size = 64,
+        scale = 0.25,
+        shift = { 8, -8 }  -- позиция второй иконки в правом нижнем углу
+      },
+    },
+    icon_size = 64,
+    enabled = false,
+    allow_decomposition = true,
+    category = "chemistry",
+    subgroup = "biomass-crafting",  
+    ingredients = {
+      {type = "fluid",  name = "water", amount = 1000},
+    },
+    results = { 
+	  {type = "item",  name = "biomass", amount = 1,},
+	  {type = "fluid",  name = "polluted-water", amount = 10},
+	  {type = "fluid",  name = "water", amount = 200,},
+    },
+    energy_required = 20
+  }
+})
+
+
+data:extend({
+  {
+    type = "recipe",
+    name = "germ-cultivation",
+    icons = {
+      {
+        icon = "__biomass-engineering__/graphics/icons/polluted-water.png",
+        icon_size = 64
+      },
+      {
+        icon = "__base__/graphics/icons/fluid/water.png",
+        icon_size = 64,
+        scale = 0.25,
+        shift = { 8, -8 }  -- позиция второй иконки в правом нижнем углу
+      },
+    },
+    icon_size = 64,
+    enabled = false,
+    allow_decomposition = true,
+    category = "chemistry",
+    subgroup = "biomass-crafting",  
+    ingredients = {
+      {type = "fluid",  name = "polluted-water", amount = 700},
+	  {type = "fluid",  name = "water", amount = 300},
+	  {type = "item",  name = "biomass", amount = 1,},
+    },
+    results = { 
+	  {type = "fluid",  name = "polluted-water", amount = 1000},
+    },
+    energy_required = 20
+  }
+})
+
+
+data:extend({
+  {
+    type = "recipe",
+    name = "germ-extraction",
+    icons = {
+      {
+        icon = "__biomass-engineering__/graphics/icons/polluted-water.png",
+        icon_size = 64
+      },
+      {
+        icon = "__base__/graphics/icons/fluid/water.png",
+        icon_size = 64,
+        scale = 0.25,
+        shift = { 8, -8 }  -- позиция второй иконки в правом нижнем углу
+      },
+    },
+    icon_size = 64,
+    enabled = false,
+    allow_decomposition = true,
+    category = "chemistry",
+    subgroup = "biomass-crafting",  
+    ingredients = {
+      {type = "fluid",  name = "polluted-water", amount = 1000},
+	  {type = "item",  name = "coal", amount = 1,},
+    },
+    results = { 
+	  {type = "fluid",  name = "polluted-water", amount = 500},
+	  {type = "item",   name = "biomass", amount = 5,},
+    },
+    energy_required = 20
+  }
+})
+
+
+data:extend({
+  {
+    type = "recipe",
+    name = "polymorphic-synthesis-steel",
+    icons = {
+      {
+        icon = "__base__/graphics/icons/steel-plate.png",
+        icon_size = 64
+      },
+      {
+        icon = "__biomass-engineering__/graphics/icons/compressed-biomass.png",
+        icon_size = 64,
+        scale = 0.25,
+        shift = { -8, -8 }  -- позиция второй иконки в правом нижнем углу
+      }
+    },
+    icon_size = 64,
+    enabled = false,
+    --allow_decomposition = true,
+    category = "centrifuging",
+    subgroup = "biomass-crafting",  
+    ingredients = {
+      {type = "item", name = "compressed-biomass", amount = 10}                    
+    },
+    results = { 
+      {type = "item", name = "steel-plate", amount = 20},
+    },
+    energy_required = 20        
+  }
+})
+
+
+data:extend({
+  {
+    type = "recipe",
+    name = "polymorphic-synthesis-advanced-circuit",
+    icons = {
+      {
+        icon = "__base__/graphics/icons/advanced-circuit.png",
+        icon_size = 64
+      },
+      {
+        icon = "__biomass-engineering__/graphics/icons/compressed-biomass.png",
+        icon_size = 64,
+        scale = 0.25,
+        shift = { -8, -8 }  -- позиция второй иконки в правом нижнем углу
+      }
+    },
+    icon_size = 64,
+    enabled = false,
+    --allow_decomposition = true,
+    category = "centrifuging",
+    subgroup = "biomass-crafting",  
+    ingredients = {
+      {type = "item", name = "compressed-biomass", amount = 10}                    
+    },
+    results = { 
+      {type = "item", name = "advanced-circuit", amount = 10},
+    },
+    energy_required = 20        
+  }
+})
+
+
+data:extend({
+  {
+    type = "recipe",
+    name = "polymorphic-synthesis-plastic-bar",
+    icons = {
+      {
+        icon = "__base__/graphics/icons/plastic-bar.png",
+        icon_size = 64
+      },
+      {
+        icon = "__biomass-engineering__/graphics/icons/compressed-biomass.png",
+        icon_size = 64,
+        scale = 0.25,
+        shift = { -8, -8 }  -- позиция второй иконки в правом нижнем углу
+      }
+    },
+    icon_size = 64,
+    enabled = false,
+    --allow_decomposition = true,
+    category = "centrifuging",
+    subgroup = "biomass-crafting",  
+    ingredients = {
+      {type = "item", name = "compressed-biomass", amount = 10}                    
+    },
+    results = { 
+      {type = "item", name = "plastic-bar", amount = 100},
+    },
+    energy_required = 20        
+  }
+})
+
+
+data:extend({
+  {
+    type = "recipe",
+    name = "polymorphic-synthesis-purple-orb",
+    icons = {
+      {
+        icon = "__biomass-engineering__/graphics/icons/purple-orb.png",
+        icon_size = 64
+      },
+      {
+        icon = "__biomass-engineering__/graphics/icons/compressed-biomass.png",
+        icon_size = 64,
+        scale = 0.25,
+        shift = { -8, -8 }  -- позиция второй иконки в правом нижнем углу
+      }
+    },
+    icon_size = 64,
+    enabled = false,
+    --allow_decomposition = true,
+    category = "centrifuging",
+    subgroup = "biomass-crafting",  
+    ingredients = {
+      {type = "item", name = "compressed-biomass", amount = 10}                    
+    },
+    results = { 
+      {type = "item", name = "purple-orb", amount = 10},
+    },
+    energy_required = 20        
+  }
+})
+
+
+data:extend({
+  {
+    type = "recipe",
+    name = "purple-orb-hatching",
+    icons = {
+      {
+        icon = "__base__/graphics/icons/production-science-pack.png",
+        icon_size = 64
+      },
+      {
+        icon = "__biomass-engineering__/graphics/icons/purple-orb.png",
+        icon_size = 64,
+        scale = 0.25,
+        shift = { -8, -8 }  -- позиция второй иконки в правом нижнем углу
+      }
+    },
+    icon_size = 64,
+    enabled = false,
+    --allow_decomposition = true,
+    category = "centrifuging",
+    subgroup = "biomass-crafting",  
+    ingredients = {
+      {type = "item", name = "purple-orb", amount = 1},
+	  {type = "item", name = "production-science-pack", amount = 1}	  
+    },
+    results = { 
+      {type = "item", name = "production-science-pack", amount = 2},
+    },
+    energy_required = 2       
+  }
+})

@@ -13,36 +13,6 @@ data:extend({
             filename = "__biomass-engineering__/graphics/icons/biomass.png",
             scale = 0.5,
           },
-
-          {
-            size = 64,
-            filename = "__biomass-engineering__/graphics/icons/biomass2.png",
-            scale = 0.5,
-          },
-
-          {
-            size = 64,
-            filename = "__biomass-engineering__/graphics/icons/biomass3.png",
-            scale = 0.5,
-          },
-
-          {
-            size = 64,
-            filename = "__biomass-engineering__/graphics/icons/biomass4.png",
-            scale = 0.5,
-          },
-
-          {
-            size = 64,
-            filename = "__biomass-engineering__/graphics/icons/biomass5.png",
-            scale = 0.5,
-          },
-
-          {
-            size = 64,
-            filename = "__biomass-engineering__/graphics/icons/biomass6.png",
-            scale = 0.5,
-          },
         },
 
     icon_size = 64,
@@ -105,6 +75,31 @@ data:extend({
     fuel_emissions_multiplier = 0.2,
     weight = 1*kg,
   },
+  
+  {
+    type = "item",
+    name = "purple-orb",
+    icon = "__biomass-engineering__/graphics/icons/purple-orb.png", 
+    icon_size = 64,
+    stack_size = 10,
+
+    weight = 1*kg,
+  },
+  
+  {
+    type = "fluid",
+    name = "polluted-water",
+	base_color = {b=0, g=0, r=0},
+	flow_color = {
+        b = 0.5,
+        g = 0.5,
+        r = 0.5
+      },
+	default_temperature = 25,
+    icon = "__biomass-engineering__/graphics/icons/polluted-water.png", 
+    icon_size = 64,
+  },
+  
 
   {
     type = "item",
